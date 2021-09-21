@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Roboto&display=swap');
+
+/* 
+font-family: 'Baloo Tammudu 2', cursive;
+font-family: 'Roboto', sans-serif;
+ */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    padding: 10px 0px;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 3;
+    border-bottom: 1px solid rgb(107, 107, 107);
+    background-color: black;   
+}
+#navbar h1{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    padding-right: 20px;
+}
+#navbar img{
+    height: 40px;
+    width: 40px;
+    margin: 0px 10px;
+}
+#navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: white;
+    list-style: none;
+}
+#navbar ul li a{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 0px 10px;
+    font-size: 20px;
+}
+#navbar ul li a:hover{
+    color: rgb(180, 180, 180);
+}
+#container{
+    color: white;
+}
+#container .world-stats{
+    display: flex;
+    flex-direction: column;
+}
+#container .world-stats h1{
+    font-family: 'Baloo Tammudu 2', cursive;
+    text-align: center;
+    border-top: 1px solid rgb(107, 107, 107);
+    line-height: 116px;
+    font-size: 50px;
+    padding:0px 15px;
+    padding-top: 45px;
+}
+#container .world-stats-container{
+    font-family: 'Baloo Tammudu 2', cursive;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    margin: 40px 0px;
+}
+#container .world-stats-container h2{
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 40px;
+}
+#container .world-stats-container p{
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 35px;
+}
+#container .world-stats-container #world-cases-count{
+    color: yellow;
+}
+#container .world-stats-container #world-recovered-count{
+    color: #16ba16;
+}
+#container .world-stats-container #world-deaths-count{
+    color: red;
+}
+#container .world-stats-container .world-cases{
+    text-align: center;
+}
+
+/*  */
+/* table */
+/*  */
+
+.country-container{
+    font-family: 'Baloo Tammudu 2', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid rgb(107, 107, 107);
+    background-color: #454545;
+    padding-bottom: 60px;
+}
+.country-container h1{
+    text-align: center;
+    margin: 10px 0px;
+    font-size: 50px;
+}
+.country-table{
+    text-align: center;
+    border-collapse: collapse;
+    border-radius: 10px 10px 0px 0px;
+    width: 90%;
+    background-color: rgb(40, 40, 40);
+    margin: 10px 0px;
+    overflow: hidden;
+    /* overflow: hidden is important for border-radius */ 
+}
+
+.country-table thead th{
+    background-color: black;
+    color: white;
+    margin: auto;
+    font-size: 30px;
+    padding: 0px 16px;
+    padding-top: 5px;
+    border-bottom: 1px solid rgb(160, 160, 160);
+}
+
+#country-body td{
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgb(160, 160, 160);
+    font-size: 25px;
+    padding-top: 15px;
+    line-height: 30px;
+}
+#country-body tr:nth-of-type(even){
+    background-color: rgb(53, 53, 53);
+}
+#country-body tr:last-of-type{
+    border-bottom: 5px solid rgb(160, 160, 160);
+}
+
+#country-body #table-cases{
+    color: yellow;
+}
+#country-body #table-recovered{
+    color: #16ba16;
+}
+#country-body #table-deaths{
+    color: red;
+}
+
+footer{
+    font-family: 'Baloo Tammudu 2', cursive;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 1px 0px;
+    font-size: 20px;
+}
+
+/*  */
+/* phone section */
+/*  */
+
+@media only screen and (max-width: 450px){
+
+    #navbar{
+        padding: 5px 0px;
+        width: 100%; 
+    }
+    #navbar h1{
+        font-size: 20px;
+        padding-right: 10px;
+    }
+    #navbar img{
+        height: 25px;
+        width: 25px;
+        margin: 0px 5px;
+    }
+    #navbar ul li a{
+        padding: 0px 5px;
+        font-size: 15px;
+    }
+
+    #container .world-stats h1{
+        line-height: 40px;
+        font-size: 30px;
+        padding:0px 15px;
+        padding-top: 35px;
+    }
+    #container .world-stats-container{
+        flex-direction: column;
+        padding-bottom: 10px;
+        margin: 10px 0px;
+    }
+    #container .world-stats-container h2{
+        font-size: 20px;
+        line-height: 35px;
+    }
+    #container .world-stats-container p{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    /*  */
+    /* table */
+    /*  */
+    
+    .country-container{
+        padding-bottom: 20px;
+    }
+    .country-container h1{
+        margin: 5px 0px;
+        font-size: 30px;
+        padding-top: 10px;
+    }
+    .country-table{
+        border-radius: 7px 7px 0px 0px;
+        width: 95%;
+        margin: 5px 0px;
+    }
+    
+    .country-table thead th{
+        font-size: 15px;
+        padding: 0px 2px;
+        padding-top: 5px;
+    }
+    
+    #country-body td{
+        font-size: 14px;
+        padding-top: 6px;
+        line-height: 30px;
+    }
+    footer{
+        padding: 1px 0px;
+        font-size: 10px;
+    }
+
+}
+
+/*  */
+/* tablet section */
+/*  */
+
+@media only screen and (min-width:450px) and (max-width: 800px){
+
+    #navbar{
+        padding: 6px 0px;
+        width: 100%; 
+    }
+    #navbar h1{
+        font-size: 25px;
+        padding-right: 15px;
+    }
+    #navbar img{
+        height: 30px;
+        width: 30px;
+        margin: 0px 7px;
+    }
+    #navbar ul li a{
+        padding: 0px 5px;
+        font-size: 17px;
+    }
+
+    #container .world-stats h1{
+        line-height: 50px;
+        font-size: 35px;
+        padding:0px 15px;
+        padding-top: 40px;
+    }
+    #container .world-stats-container{
+        flex-direction: column;
+        padding-bottom: 20px;
+        margin: 10px 0px;
+    }
+    #container .world-stats-container h2{
+        font-size: 25px;
+        line-height: 40px;
+    }
+    #container .world-stats-container p{
+        font-size: 21px;
+        line-height: 35px;
+    }
+    /*  */
+    /* table */
+    /*  */
+    
+    .country-container{
+        padding-bottom: 25px;
+    }
+    .country-container h1{
+        margin: 5px 0px;
+        font-size: 35px;
+        padding-top: 15px;
+    }
+    .country-table{
+        border-radius: 7px 7px 0px 0px;
+        width: 95%;
+        margin: 5px 0px;
+    }
+    
+    .country-table thead th{
+        font-size: 20px;
+        padding: 0px 2px;
+        padding-top: 5px;
+    }
+    
+    #country-body td{
+        font-size: 16px;
+        padding-top: 10px;
+        line-height: 30px;
+    }
+    footer{
+        padding: 1px 0px;
+        font-size: 12px;
+    }
+
+}
+
+

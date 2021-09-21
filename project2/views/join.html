@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/styleJoin.css">
+    <title>Join Us</title>
+</head>
+
+<body>
+    <div id="navbar">
+        <div class="mainLogo">
+            <img src="../static/logo/logo.png" alt="Error not found!!!" />
+            <h1>Dance Academy</h1>
+        </div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/student">Our Students</a></li>
+            <li><a href="/join">Join Now</a></li>
+        </ul>
+    </div>
+
+    <div id="join">
+
+        <%if(message=='success' ) {%>
+            <div class='alert-success'>
+                <p>Data Saved Successfully!</p>
+
+            </div>
+            <%}%>
+                <%if(message=='failed') {%>
+                    <div class='alert-failed'>
+                        <p>Unsuccessfull!!! try again</p>
+
+                    </div>
+                    <%}%>
+
+                        <h1> Join Us </h1>
+                        <img src="../static/mentor/t2.jpg" alt="Error not found!!!" />
+                        <form class="formClass" action="/join" method="post">
+                            <div class="box" id="nameLabel">
+                                <label for="name"> Name : </label>
+                                <input type="text" name="name" id="name" placeholder="Enter your Name" />
+                            </div>
+                            <div class="box" id="phoneLabel">
+                                <label for="phone"> Phone : </label>
+                                <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" placeholder="Contact info (10 digit)" />
+                            </div>
+                            <div class="box" id="emailLabel">
+                                <label for="email"> E-mail : </label>
+                                <input type="email" name="email" id="email" placeholder="Enter your Email" />
+                            </div>
+                            <div class="box" id="addressLabel">
+                                <label for="address"> Address : </label>
+                                <input type="address" name="address" id="address" placeholder="Enter your Address" />
+                            </div>
+                            <div class="box" id="courseLabel">
+                                <label for="course"> Course : </label>
+                                <select name="course" id="course">
+                                    <option value="Beginner">Beginner</option>
+                                    <option value="Intermediate">Intermediate</option>
+                                    <option value="Advanced">Advanced</option>
+                                </select>
+                            </div>
+                            <div id="sunbmitLabel">
+                                <button class="btn" id="joinButton">Join Now</button>
+                            </div>
+                        </form>
+    </div>
+    <section id="contactSection">
+        <h2>Contact us</h2>
+        <div class="contactArea">
+            <a href="https://www.instagram.com" target="_blank" )><img src="../static/contact/insta.png" /></a>
+            <a href="https://www.facebook.com" target="_blank" )><img src="../static/contact/fb.png" /></a>
+            <a href="https://www.twitter.com" target="_blank" )><img src="../static/contact/tw.png" /></a>
+            <a href="https://www.linkedin.com" target="_blank" )><img src="../static/contact/ln.png" /></a>
+            <a href="https://www.youtube.com" target="_blank" )><img src="../static/contact/yt.png" /></a>
+            <a href="https://www.whatsapp.com" target="_blank" )><img src="../static/contact/wp.png" /></a>
+        </div>
+    </section>
+
+    <footer id="footer">
+        copyright &copy; All rights reserved @ SASIDHARAN K 2021
+    </footer>
+</body>
+
+</html>

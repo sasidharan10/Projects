@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Reggae+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+/* font-family: 'Reggae One', cursive; */
+/* font-family: 'Mate SC', serif; */
+/* font-family: 'Josefin Sans', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(139, 139, 139);
+}
+#aboutContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(209, 208, 208);
+    margin: 30px 30px;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+#aboutContainer h1{
+    font-family: 'Mate SC', serif;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 24px 10px;
+
+}
+#aboutContainer p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 26px;
+    text-align: justify;
+    padding: 10px 30px;
+}
+#gallery{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: space-around;
+}
+#galleryTitle h2{
+    font-family: 'Mate SC', serif;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 20px 10px;
+
+}
+#gallery img{
+    background-color: rgb(139, 139, 139);
+    height: 200px;
+    width: 200px;
+    margin: 20px 0px;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 2px 2px;
+}
+#contactSection{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(119, 119, 119);
+}
+#contactSection h2{
+    font-family: 'Mate SC', serif;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    padding: 15px 0px;
+}
+#contactSection .contactArea{
+    display: flex;
+    margin: 0px 30px;
+    justify-content: space-around;
+    padding:10px 0px;
+}
+#contactSection img{
+    width: 50px;
+    height: 50px;
+    filter: invert(0);
+}
+#contactSection img:hover{
+    filter: invert(1);
+}
+/*  */
+/* Basic phone section */
+/*  */
+
+@media only screen and (max-width: 400px){
+    #navbar{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #navbar .mainLogo{
+        margin: 1px 0px;
+    }
+    #navbar .mainLogo h1{
+        padding-right: 0px;
+        font-size: 16px;
+    }
+    #navbar .mainLogo img{              
+       margin: 0px 4px;
+        height: 22px;
+        width: 22px;
+    }
+    #navbar ul{
+        margin: 0px 0px;
+        flex-wrap: wrap;
+    }
+    #navbar ul li a{
+        font-size: 9px;
+        padding: 1px 6px;
+    }
+
+    #aboutContainer{
+        margin: 10px 5px;
+        border: 1px solid black;
+    }
+    #aboutContainer h1{
+        font-size: 18px;
+        padding: 10px 8px; 
+    }
+    #aboutContainer p{
+        font-size: 12px;
+        padding: 10px 14px;
+    
+    }
+    #gallery{
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    #galleryTitle h2{
+        font-size: 18px;
+    padding: 6px 6px;
+    
+    }
+    #gallery img{
+        height: 50px;
+        width: 50px;
+        margin: 20px 0px;
+        border: 1px solid black;
+        padding: 2px 2px;
+    }
+
+    #contactSection h2{
+        font-size: 20px;
+        padding: 5px 0px;
+    }
+    #contactSection .contactArea{
+        display: flex;
+        margin: 0px 8px;
+        padding: 5px 0px;
+    }
+    #contactSection img{
+        width: 20px;
+        height: 20px;
+    }
+    #footer{
+        font-size: 8px;
+        padding: 1px 0px;
+    }
+}
+
+/*  */
+/* Smart phone section */
+/*  */
+
+@media only screen and (min-width:400px) and (max-width: 700px){
+    #navbar{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #navbar .mainLogo{
+        margin: 1px 0px;
+    }
+    #navbar .mainLogo h1{
+        padding-right: 0px;
+        font-size: 20px;
+    }
+    #navbar .mainLogo img{              
+        margin: 2px 6px;
+        height: 25px;
+        width: 25px;
+    }
+    #navbar ul{
+        margin: 5px 0px;
+        flex-wrap: wrap;
+    }
+    #navbar ul li a{
+        font-size: 14px;
+        padding: 1px 14px;
+    }
+
+    #aboutContainer{
+        margin: 10px 5px;
+        border: 1px solid black;
+    }
+    #aboutContainer h1{
+        font-size: 22px;
+        padding: 10px 8px; 
+    }
+    #aboutContainer p{
+        font-size: 14px;
+        padding: 10px 14px;
+    
+    }
+    #gallery{
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    #galleryTitle h2{
+        font-size: 22px;
+        padding: 8px 6px;
+    
+    }
+    #gallery img{
+        height: 70px;
+        width: 70px;
+        margin: 20px 0px;
+        border: 1px solid black;
+        padding: 2px 2px;
+    }
+
+
+    #contactSection h2{
+        font-size: 26px;
+        padding: 10px 0px;
+    }
+    #contactSection .contactArea{
+        display: flex;
+        margin: 0px 8px;
+        padding: 5px 0px;
+    }
+    #contactSection img{
+        width: 30px;
+        height: 30px;
+    }
+
+    #footer{
+        font-size: 11px;
+        padding: 1px 0px;
+    }
+}
+
+/*  */
+/* tablet section */
+/*  */
+
+@media only screen and (min-width:700px) and (max-width: 900px){
+
+    #navbar .mainLogo{
+        margin: 1px 0px;
+    }
+    #navbar .mainLogo h1{
+        padding-right: 20px;
+        font-size: 23px;
+    }
+    #navbar .mainLogo img{              
+        margin: 2px 8px;
+        height: 30px;
+        width: 30px;
+    }
+    #navbar ul{
+        margin: 5px 0px;
+        flex-wrap: wrap;
+    }
+    #navbar ul li a{
+        font-size: 16px;
+        padding: 1px 14px;
+    }
+
+    #aboutContainer{
+        margin: 10px 5px;
+        border: 2px solid black;
+    }
+    #aboutContainer h1{
+        font-size: 26px;
+        padding: 14px 8px; 
+    }
+    #aboutContainer p{
+        font-size: 17px;
+        padding: 10px 20px;
+    
+    }
+    #gallery{
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    #galleryTitle h2{
+        font-size: 26px;
+        padding: 8px 6px;
+    
+    }
+    #gallery img{
+        height: 130px;
+        width: 130px;
+        margin: 20px 0px;
+        border: 2px solid black;
+        padding: 2px 2px;
+    }
+
+
+    #contactSection h2{
+        font-size: 32px;
+        padding: 10px 0px;
+    }
+    #contactSection .contactArea{
+        display: flex;
+        margin: 0px 8px;
+        padding: 5px 0px;
+    }
+    #contactSection img{
+        width: 40px;
+        height: 40px;
+    }
+    #footer{
+        font-size: 15px;
+        padding: 1px 0px;
+    }
+}

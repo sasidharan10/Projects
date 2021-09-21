@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/styleStudent.css">
+    <title>Our Students</title>
+</head>
+
+<body>
+    <div id="navbar">
+        <div class="mainLogo">
+            <img src="../static/logo/logo.png" alt="Error not found!!!" />
+            <h1>Dance Academy</h1>
+        </div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/student">Our Students</a></li>
+            <li><a href="/join">Join Now</a></li>
+        </ul>
+    </div>
+    <div id="student">
+        <%if(message=='deleted' ) {%>
+            <div class='alert-student'>
+                <p>Data Deleted Successfully!</p>
+                <%message %>
+
+            </div>
+            <%}%>
+                <%if(message=='updated') {%>
+                    <div class='alert-student'>
+                        <p>Data Updated Successfully!</p>
+                        <%message %>
+
+                    </div>
+                    <%}%>
+        <h1>Our Students</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>S.no</th>
+                    <th>Name</th>
+                    <th>Course</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <% if(record!=null){ %>
+                <% let i=1;record.forEach(data=>{ %>
+                <tr>
+                    <td><%= i%></td>
+                    <td><%= data.name%></td>
+                    <td><%= data.course%></td>
+                    <td><a href="/edit/<%= data._id%>"><img src="../static/logo/edit.png" alt="Not found!!!"></a></td>
+                    <td><a href="/delete/<%= data._id%>"><img src="../static/logo/del.png" alt="Not found!!!"></a></td>
+                </tr>
+                <% i++; })%>
+                <% } %>
+            </tbody>
+        </table>
+    </div>
+
+    <section id="contactSection">
+        <h2>Contact us</h2>
+        <div class="contactArea">
+            <a href="https://www.instagram.com" target="_blank" )><img src="../static/contact/insta.png" /></a>
+            <a href="https://www.facebook.com" target="_blank" )><img src="../static/contact/fb.png" /></a>
+            <a href="https://www.twitter.com" target="_blank" )><img src="../static/contact/tw.png" /></a>
+            <a href="https://www.linkedin.com" target="_blank" )><img src="../static/contact/ln.png" /></a>
+            <a href="https://www.youtube.com" target="_blank" )><img src="../static/contact/yt.png" /></a>
+            <a href="https://www.whatsapp.com" target="_blank" )><img src="../static/contact/wp.png" /></a>
+        </div>
+    </section>
+    <footer id="footer">
+        copyright &copy; All rights reserved @ SASIDHARAN K 2021
+    </footer>
+</body>
+
+</html>
+

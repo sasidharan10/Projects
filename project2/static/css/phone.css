@@ -1,0 +1,315 @@
+/*  */
+/* Basic phone section */
+/*  */
+@media only screen and (max-width: 400px){
+    #navbar{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #navbar .mainLogo{
+        margin: 1px 0px;
+    }
+    #navbar .mainLogo h1{
+        padding-right: 0px;
+        font-size: 16px;
+    }
+    #navbar .mainLogo img{              
+       margin: 0px 4px;
+        height: 22px;
+        width: 22px;
+    }
+    #navbar ul{
+        margin: 0px 0px;
+        flex-wrap: wrap;
+    }
+    #navbar ul li a{
+        font-size: 9px;
+        padding: 1px 6px;
+    }
+    .introImg img{
+        height: 130px;
+        width: 250px;
+    }
+    #introSection h1{
+        padding: 10px 0px;
+        font-size:22px;
+    }
+    #introSection p{
+        padding: 20px 10px;
+        font-size: 12px;
+    }
+    #introSection::before{          
+        height: 500px;
+    }
+
+    #courseSection .cardArea{
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+    #courseSection h2{
+        font-size: 20px;
+        padding: 6px 0px;
+    }
+    #courseSection .card{
+        border: 1px solid rgb(136, 136, 136);
+        border-radius: 12px;
+        padding: 0px 0px;
+        margin: 4px 6px;
+    }
+    #courseSection .card h3{
+        font-size: 18px;
+    padding: 10px 0px;
+    }
+    #courseSection .card img{
+        height: 40px;
+        width: 40px;
+    }
+    #courseSection .card p{
+        padding: 16px 10px;
+        font-size: 12px;
+    }
+    #buttonArea{
+        margin-bottom: 10px;
+    }
+    .btn{    
+        border: 1px solid #8b8b8b;
+        font-size: 10px;
+        padding: 2px 4px;
+    }
+    .btn:hover{
+        border: 1px solid rgb(209, 209, 209);
+        background-color: rgb(36, 36, 36);
+    }
+
+    /* Contact section */
+
+    #contactSection h2{
+        font-size: 20px;
+        padding: 5px 0px;
+    }
+    #contactSection .contactArea{
+        display: flex;
+        margin: 0px 8px;
+        padding: 5px 0px;
+    }
+    #contactSection img{
+        width: 20px;
+        height: 20px;
+    }
+    #footer{
+        font-size: 8px;
+        padding: 1px 0px;
+    }
+}
+
+/*  */
+/* Smart phone section */
+/*  */
+
+@media only screen and (min-width:400px) and (max-width: 700px)
+{
+    #navbar{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #navbar .mainLogo{
+        margin: 1px 0px;
+    }
+    #navbar .mainLogo h1{
+        padding-right: 0px;
+    font-size: 20px;
+    }
+    #navbar .mainLogo img{              
+        margin: 2px 4px;
+        height: 25px;
+        width: 25px;
+    }
+    #navbar ul{
+        margin: 5px 0px;
+        flex-wrap: wrap;
+    }
+    #navbar ul li a{
+        font-size: 14px;
+        padding: 1px 14px;
+    }
+    .introImg img{
+        height: 150px;
+        width: 300px;
+    }
+    #introSection h1{
+        padding: 14px 0px;
+        font-size:30px;
+    }
+    #introSection p{
+        padding: 20px 10px;
+        font-size: 15px;
+    }
+    #introSection::before{          
+        height: 500px;
+    }
+
+    #courseSection .cardArea{
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+    #courseSection h2{
+        font-size: 22px;
+        padding: 10px 0px;
+    }
+    #courseSection .card{
+        border: 1px solid rgb(136, 136, 136);
+        border-radius: 12px;
+        padding: 0px 0px;
+        margin: 6px 10px;
+    }
+    #courseSection .card h3{
+        font-size: 22px;
+    padding: 10px 0px;
+    }
+    #courseSection .card img{
+        height: 50px;
+        width: 50px;
+    }
+    #courseSection .card p{
+        padding: 16px 16px;
+        font-size: 15px;
+    }
+    #buttonArea{
+        margin-bottom: 15px;
+    }
+    .btn{    
+        border: 1px solid #8b8b8b;
+        font-size: 15px;
+        padding: 2px 4px;
+    }
+    .btn:hover{
+        border: 1px solid rgb(209, 209, 209);
+        background-color: rgb(36, 36, 36);
+    }
+
+    /* Contact section */
+
+    #contactSection h2{
+        font-size: 26px;
+        padding: 10px 0px;
+    }
+    #contactSection .contactArea{
+        display: flex;
+        margin: 0px 8px;
+        padding: 5px 0px;
+    }
+    #contactSection img{
+        width: 30px;
+        height: 30px;
+    }
+    #footer{
+        font-size: 11px;
+        padding: 1px 0px;
+    }
+    
+}
+
+/*  */
+/* tablet section */
+/*  */
+
+@media only screen and (min-width:700px) and (max-width: 900px)
+{
+
+    #navbar .mainLogo{
+        margin: 1px 0px;
+    }
+    #navbar .mainLogo h1{
+        padding-right: 20px;
+        font-size: 23px;
+    }
+    #navbar .mainLogo img{              
+        margin: 2px 4px;
+        height: 30px;
+        width: 30px;
+    }
+    #navbar ul{
+        margin: 5px 0px;
+        flex-wrap: wrap;
+    }
+    #navbar ul li a{
+        font-size: 16px;
+        padding: 1px 14px;
+    }
+    .introImg img{
+        height: 250px;
+        width: 500px;
+    }
+    #introSection h1{
+        padding: 18px 0px;
+        font-size:40px;
+    }
+    #introSection p{
+        padding: 20px 30px;
+        font-size: 20px;    
+    }
+    #introSection::before{          
+        height: 600px;
+    }
+
+    #courseSection .cardArea{
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+    #courseSection h2{
+        font-size: 28px;
+        padding: 20px 0px;
+    }
+    #courseSection .card{
+        border: 2px solid rgb(136, 136, 136);
+        border-radius: 12px;
+        margin: 10px 16px;
+    }
+    #courseSection .card h3{
+        font-size: 26px;
+    padding: 26px 0px;
+    }
+    #courseSection .card img{
+        height: 80px;
+        width: 80px;
+    }
+    #courseSection .card p{
+        padding: 34px 20px;
+    font-size: 20px;
+    }
+    #buttonArea{
+        margin: 10px 0px;
+        margin-bottom: 30px;
+    }
+    .btn{    
+        border: 2px solid #8b8b8b;
+        font-size: 20px;
+        padding: 4px 10px;
+    }
+    .btn:hover{
+        border: 2px solid rgb(209, 209, 209);
+        background-color: rgb(36, 36, 36);
+    }
+
+    /* Contact section */
+
+    #contactSection h2{
+        font-size: 32px;
+        padding: 10px 0px;
+    }
+    #contactSection .contactArea{
+        display: flex;
+        margin: 0px 8px;
+        padding: 5px 0px;
+    }
+    #contactSection img{
+        width: 40px;
+        height: 40px;
+    }
+    #footer{
+        font-size: 15px;
+        padding: 1px 0px;
+    }
+    
+} 
+

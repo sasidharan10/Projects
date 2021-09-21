@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Roboto&display=swap');
+
+/* 
+font-family: 'Baloo Tammudu 2', cursive;
+font-family: 'Roboto', sans-serif;
+ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none !important;
+}
+
+#map{
+    width: 100%;
+    height: 100vh;
+    cursor: default;
+}
+
+.mapboxgl-canvas-container.mapboxgl-interactive, .mapboxgl-ctrl-group button.mapboxgl-ctrl-compass {
+    cursor: pointer !important;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.mapboxgl-popup {
+    max-width: 200px;
+    cursor: pointer;
+    pointer-events:none;
+}
+
+.mapboxgl-popup-content {
+    background: #2c2b2b !important;
+    border-radius: 5px;
+    border: 2px solid rgb(161, 161, 161) !important;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+    padding: 12px 12px !important;
+    pointer-events: none;
+    color: white;
+}
+
+.mapboxgl-popup-content h3{
+    font-family: 'Baloo Tammudu 2', cursive;
+    text-align: center !important;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.mapboxgl-popup-content p{
+    padding-top: 2px;
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-size: 15px;
+    text-align:justify;
+    font-weight: bold;
+}
+
+.mapboxgl-popup-content #infected{
+    color: yellow;
+}
+
+.mapboxgl-popup-content #recovered{
+    color: rgb(7, 224, 7);
+}
+
+.mapboxgl-popup-content #death{
+    color: rgb(253, 66, 42);
+    font-weight: bolder !important;
+}
+
+.mapboxgl-ctrl-geocoder--input{
+    font-weight: bold;
+}
+
+.mapboxgl-ctrl-geocoder--input::placeholder{
+    color: rgb(49, 49, 49) !important;
+    font-weight: 100;
+}
+
+.mapboxgl-ctrl-geocoder {
+    background-color: rgb(145, 145, 145);
+}
+
+.mapboxgl-ctrl-geocoder--icon {
+    fill: #000000;
+}
+
+.mapboxgl-ctrl-geocoder--icon-close {
+    fill: #000000 !important;
+    background-color: rgb(145, 145, 145);
+}
+
+.mapboxgl-ctrl-geocoder .mapboxgl-ctrl-geocoder--pin-right > * {
+    background-color: rgb(145, 145, 145) !important;
+}
+
+.mapboxgl-ctrl-geocoder--button {
+    background: rgb(145, 145, 145);
+}
+
+.mapboxgl-ctrl-group {
+    background: rgb(145, 145, 145);
+}
+
+circle{
+    fill: black;
+}
+
+.map-overlay {
+    font-family: 'Baloo Tammudu 2', cursive;
+    position: absolute;
+    color: black;
+    border: 2px solid black;
+    bottom: 0;
+    right: 0;
+    background: rgb(145, 145, 145);
+    margin-right: 10px;
+    border-radius: 5px;
+    overflow: auto;
+  }
+  .content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .content p{
+    font-size: 15px;
+    margin-top: 12px;
+    font-weight: bold;
+  }
+  .content img{
+    margin: 2px 7px;
+    /* height: 15px;
+    width: 15px; */
+  }
+  #legend {
+    padding: 2px;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+    line-height: 18px;
+    height: 190px;
+    margin-bottom: 10px;
+    width: 138px;
+  }
+  
+  .legend-key {
+    display: inline-block;
+    border-radius: 20%;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+  }
+/*  */
+/* phone section */
+/*  */
+
+@media only screen and (max-width: 450px){
+
+    .mapboxgl-ctrl-geocoder {
+        width: 90px !important;
+    }
+    .mapboxgl-popup {
+        max-width: 100px;
+
+    }
+      .content p{
+        font-size: 12px;
+        margin-top: 6px;
+        font-weight: bold;
+      }
+      .content img{
+        margin: 2px 7px;
+        height: 20px;
+        width: 15px;
+      }
+      #legend {
+        padding: 2px;
+        line-height: 18px;
+        height: 130px;
+        margin-bottom: 10px;
+        width: 110px;
+      }
+    
+}
+
+/*  */
+/* tablet section */
+/*  */
+
+@media only screen and (min-width: 450px) and (max-width: 700px){
+    .content p{
+        font-size: 14px;
+        margin-top: 6px;
+        font-weight: bold;
+      }
+      .content img{
+        margin: 2px 7px;
+        height: 22px;
+        width: 18px;
+      }
+      #legend {
+        padding: 2px;
+        line-height: 18px;
+        height: 140px;
+        margin-bottom: 10px;
+        width: 115px;
+      }
+}

@@ -1,0 +1,418 @@
+#edit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(153, 153, 153);
+}
+#edit h1{
+    font-family: 'Josefin Sans', sans-serif; 
+    text-align: center;
+    font-weight: bold;
+    font-size: 44px;
+    color: black;
+    padding: 20px 0px;
+}
+
+.formClass{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    right: 56px;
+    margin: 20px 0px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 10px 0px;
+}
+.formClass label{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align:center;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+#nameLabel label{
+    padding: 0px 30px;
+}
+#phoneLabel label{
+    padding: 0px 30px;
+}
+#emailLabel label{
+    padding: 0px 29px;
+}
+#addressLabel label{
+    padding: 0px 22px;
+}
+#courseLabel label{
+    padding: 0px 28px;
+}
+#courseLabel select{
+    font-family: 'Josefin Sans', sans-serif;
+    width: 300px;
+    border: 3px solid black;
+    outline: none;
+    padding: 2px 0px;
+    margin: 4px 0px;
+    text-align-last:center; 
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+#courseLabel option{
+    /* font-size: 17px; */
+    font-weight: bold;
+    background-color: grey;
+}
+.formClass input{
+    font-family: 'Josefin Sans', sans-serif;
+    width: 300px;
+    border: 3px solid black;
+    outline: none;
+    padding: 2px 0px;
+    /* margin: 4px 0px; */
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+#joinButton{
+    font-size: 20px;
+    border-radius: 4px;
+    padding: 2px 6px;
+    border: 3px solid #d5d5d5;
+    position: relative;
+    left: 52px;
+    margin: 20px 0px;
+}
+#contactSection{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(119, 119, 119);
+}
+#contactSection h2{
+    font-family: 'Mate SC', serif;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    padding: 15px 0px;
+}
+#contactSection .contactArea{
+    display: flex;
+    margin: 0px 30px;
+    justify-content: space-around;
+    padding:10px 0px;
+}
+#contactSection img{
+    width: 50px;
+    height: 50px;
+    filter: invert(0);
+}
+#contactSection img:hover{
+    filter: invert(1);
+}
+
+
+/*  */
+/* phone section */
+/*  */
+
+
+
+@media only screen and (max-width: 400px){
+    #navbar{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #navbar .mainLogo{
+        margin: 1px 0px;
+    }
+    #navbar .mainLogo h1{
+        padding-right: 0px;
+        font-size: 16px;
+    }
+    #navbar ul{
+        margin: 0px 0px;
+        flex-wrap: wrap;
+    }
+    #navbar ul li a{
+        font-size: 9px;
+        padding: 1px 6px;
+    }
+    #edit h1{
+        font-size: 24px;
+        padding: 36px 0px;
+    }
+    #edit img{
+        height: 120px;
+        width: 100px;
+        border: 1px solid #cfcfcf;
+        margin-bottom: 15px;
+    }
+    .formClass{
+        position:relative;
+        right: 22px;
+        margin: 5px 0px;
+    }
+    .box{
+        margin: 10px 0px;
+    }
+    .formClass label{
+        font-size: 10px;
+    }
+    .formClass input{
+        width: 160px;
+        border: 1px solid black;
+        font-size: 10px;
+    }
+    #courseLabel select{
+        width: 160px;
+        border: 1px solid black;
+        padding: 2px 0px;
+        margin: 4px 0px;
+        font-size: 10px;
+    }
+    #nameLabel label{
+        padding: 0px 10px;
+    }
+    #phoneLabel label{
+        padding: 0px 10px;
+    }
+    #emailLabel label{
+        padding: 0px 9px;
+    }
+    #addressLabel label{
+        padding: 0px 6px;
+    }
+    #courseLabel label{
+        padding: 0px 8px;
+    }
+
+    #joinButton{
+        font-size: 10px;
+        border-radius: 2px;
+        padding: 2px 6px;
+        border: 1px solid #d5d5d5;
+        position: relative;
+        left: 26px;
+        margin: 26px 0px;
+    }
+
+    #contactSection h2{
+        font-size: 20px;
+        padding: 5px 0px;
+    }
+    #contactSection .contactArea{
+        display: flex;
+        margin: 0px 8px;
+        padding: 5px 0px;
+    }
+    #contactSection img{
+        width: 20px;
+        height: 20px;
+    }
+    #footer{
+        font-size: 8px;
+        padding: 1px 0px;
+    }
+}
+
+/*  */
+/* Smart phone section */
+/*  */
+
+@media only screen and (min-width:400px) and (max-width: 700px){
+    #navbar{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #navbar .mainLogo{
+        margin: 1px 0px;
+    }
+    #navbar .mainLogo h1{
+        padding-right: 0px;
+        font-size: 20px;
+    }
+    #navbar .mainLogo img{              
+        margin: 2px 6px;
+        height: 25px;
+        width: 25px;
+    }
+    #navbar ul{
+        margin: 5px 0px;
+        flex-wrap: wrap;
+    }
+    #navbar ul li a{
+        font-size: 14px;
+        padding: 1px 14px;
+    }
+
+    #edit h1{
+        font-size: 26px;
+        padding: 36px 0px;
+    }
+    .formClass{
+        position:relative;
+        right: 22px;
+        margin: 5px 0px;
+    }
+    .box{
+        margin: 10px 0px;
+    }
+    .formClass label{
+        font-size: 13px;
+    }
+    .formClass input{
+        width: 200px;
+        border: 2px solid black;
+        font-size: 13px;
+    }
+    #courseLabel select{
+        width: 200px;
+        border: 2px solid black;
+        font-size: 13px;
+    }
+    #nameLabel label{
+        padding: 0px 10px;
+    }
+    #phoneLabel label{
+        padding: 0px 10px;
+    }
+    #emailLabel label{
+        padding: 0px 9px;
+    }
+    #addressLabel label{
+        padding: 0px 6px;
+    }
+    #courseLabel label{
+        padding: 0px 8px;
+    }
+    #joinButton{
+        font-size: 13px;
+        border-radius: 2px;
+        padding: 2px 6px;
+        border: 2px solid #d5d5d5;
+        position: relative;
+        left: 30px;
+        margin: 30px 0px;
+    }
+
+    #contactSection h2{
+        font-size: 26px;
+        padding: 10px 0px;
+    }
+    #contactSection .contactArea{
+        display: flex;
+        margin: 0px 8px;
+        padding: 5px 0px;
+    }
+    #contactSection img{
+        width: 30px;
+        height: 30px;
+    }
+
+    #footer{
+        font-size: 11px;
+        padding: 1px 0px;
+    }
+}
+
+/*  */
+/* tablet section */
+/*  */
+
+@media only screen and (min-width:700px) and (max-width: 900px){
+
+    #navbar .mainLogo{
+        margin: 1px 0px;
+    }
+    #navbar .mainLogo h1{
+        padding-right: 20px;
+        font-size: 23px;
+    }
+    #navbar .mainLogo img{              
+        margin: 2px 8px;
+        height: 30px;
+        width: 30px;
+    }
+    #navbar ul{
+        margin: 5px 0px;
+        flex-wrap: wrap;
+    }
+    #navbar ul li a{
+        font-size: 16px;
+        padding: 1px 14px;
+    }
+
+    #edit h1{
+        font-size: 30px;
+        padding: 24px 0px;
+    }
+    .formClass{
+        position:relative;
+        right: 38px;
+        margin: 10px 0px;
+    }
+    .box{
+        margin: 10px 0px;
+    }
+    .formClass label{
+        font-size: 15px;
+    }
+    .formClass input{
+        width: 200px;
+        border: 2px solid black;
+        font-size: 15px;
+    }
+    #courseLabel select{
+        width: 200px;
+        border: 2px solid black;
+        font-size: 15px;
+    }
+    #nameLabel label{
+        padding: 0px 10px;
+    }
+    #phoneLabel label{
+        padding: 0px 10px;
+    }
+    #emailLabel label{
+        padding: 0px 9px;
+    }
+    #addressLabel label{
+        padding: 0px 6px;
+    }
+    #courseLabel label{
+        padding: 0px 8px;
+    }
+    #joinButton{
+        font-size: 15px;
+        border-radius: 2px;
+        padding: 2px 6px;
+        border: 2px solid #d5d5d5;
+        position: relative;
+        left: 34px;
+        margin: 10px 0px;
+    }
+
+    #contactSection h2{
+        font-size: 32px;
+        padding: 10px 0px;
+    }
+    #contactSection .contactArea{
+        display: flex;
+        margin: 0px 8px;
+        padding: 5px 0px;
+    }
+    #contactSection img{
+        width: 40px;
+        height: 40px;
+    }
+    #footer{
+        font-size: 15px;
+        padding: 1px 0px;
+    }
+}

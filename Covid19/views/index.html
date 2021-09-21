@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.css" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css" type="text/css">
+  <link rel="stylesheet" href="../static/css/style.css">
+  <link rel="stylesheet" href="../static/css/map.css">
+  <title>Covid19 Worldwide</title>
+</head>
+
+<body>
+  <div id="map-container">
+    <div id="navbar">
+      <img src="../static/img/logo.png" alt="Not Found!!!">
+      <h1>
+        Covid19 Worldwide
+      </h1>
+      <ul>
+        <li><a href="#map-container">Home</a></li>
+        <li><a href="#contentcontainer">Stats</a></li>
+      </ul>
+    </div>
+    <div id="map"></div>
+    <div class='map-overlay' id='legend'>
+      <div class="content"><img src="/static/img/1.png" alt="Not Found!!!">
+        <p>Above 1 M</p>
+      </div>
+      <div class="content"><img src="/static/img/2.png" alt="Not Found!!!">
+        <p>1 M - 300k</p>
+      </div>
+      <div class="content"><img src="/static/img/3.png" alt="Not Found!!!">
+        <p>300K - 100K</p>
+      </div>
+      <div class="content"><img src="/static/img/4.png" alt="Not Found!!!">
+        <p>100K - 20K</p>
+      </div>
+      <div class="content"><img src="/static/img/5.png" alt="Not Found!!!">
+        <p>Below 20K</p>
+      </div>
+    </div>
+    <section id="contentcontainer">
+      <div id="container">
+        <div class="world-stats">
+          <h1>Covid19 World Stats</h1>
+          <div class="world-stats-container">
+            <div class="world-cases">
+              <h2>Total cases</h2>
+              <p id="world-cases-count">0</p>
+            </div>
+            <div class="world-recovered">
+              <h2>Total Recovered</h2>
+              <p id="world-recovered-count">0</p>
+            </div>
+            <div class="world-deaths">
+              <h2>Total Deaths</h2>
+              <p id="world-deaths-count">0</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="country-container">
+        <h1>Covid19 Stats Country List</h1>
+        <table class="country-table">
+          <thead>
+            <tr>
+              <th>S.no</th>
+              <th>Country</th>
+              <th>Total cases</th>
+              <th>Total Recovered</th>
+              <th>Total Deaths</th>
+            </tr>
+          </thead>
+          <tbody id="country-body">
+
+          </tbody>
+        </table>
+      </div>
+
+    </section>
+  </div>
+  <footer>copyright &copy; All rights reserved @ SASIDHARAN K 2021</footer>
+
+</body>
+<script src="https://unpkg.com/es6-promise@4.2.4/dist/es6-promise.auto.min.js"></script>
+<script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.js"></script>
+<script src="../static/js/app.js"></script>
+<script src="../index.js"></script>
+
+</html>

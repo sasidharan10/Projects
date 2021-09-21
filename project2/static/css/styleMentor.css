@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Reggae+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+/* font-family: 'Reggae One', cursive; */
+/* font-family: 'Mate SC', serif; */
+/* font-family: 'Josefin Sans', sans-serif; */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#mentorContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color:#919191 ;
+}
+#mentorContainer .cardArea{
+    display: flex;
+    justify-content: center;
+    margin: 0px 6px;
+    padding-bottom: 24px;
+}
+#mentorContainer h1{
+    font-family: 'Mate SC', serif;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    font-size: 54px;
+    padding: 34px 0px;
+}
+#mentorContainer .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 12px;
+    padding: 4px 4px;
+    margin: 0px 12px;
+    background-color: #4d4d4d;;
+}
+#mentorContainer .card h3{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+    padding: 40px 0px;
+}
+#mentorContainer .card img{
+    height: 160px;
+    width: 160px;
+    border: 2px solid rgb(155 153 153);
+    border-radius: 5px;
+}
+#mentorContainer .card p{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: justify;
+    color: white;
+    padding: 40px 32px;
+    font-size: 20px;
+}
+#contactSection{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(119, 119, 119);
+}
+#contactSection h2{
+    font-family: 'Mate SC', serif;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    padding: 15px 0px;
+}
+#contactSection .contactArea{
+    display: flex;
+    margin: 0px 30px;
+    justify-content: space-around;
+    padding:10px 0px;
+}
+#contactSection img{
+    width: 50px;
+    height: 50px;
+    filter: invert(0);
+}
+#contactSection img:hover{
+    filter: invert(1);
+}
+
+/*  */
+/* Basic phone section */
+/*  */
+
+@media only screen and (max-width: 400px){
+    #navbar{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #navbar .mainLogo{
+        margin: 1px 0px;
+    }
+    #navbar .mainLogo h1{
+        padding-right: 0px;
+        font-size: 16px;
+    }
+    #navbar .mainLogo img{              
+       margin: 0px 4px;
+        height: 22px;
+        width: 22px;
+    }
+    #navbar ul{
+        margin: 0px 0px;
+        flex-wrap: wrap;
+    }
+    #navbar ul li a{
+        font-size: 9px;
+        padding: 1px 6px;
+    }
+    #mentorContainer .cardArea{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 0px;
+        padding-bottom: 6px;
+    }
+    #mentorContainer h1{
+        font-size: 20px;
+        padding: 12px 0px;
+    }
+    #mentorContainer .card{
+        border: 1px solid black;
+        padding: 4px 4px;
+        margin: 6px 8px;
+    }
+    #mentorContainer .card h3{
+        font-size: 18px;
+        padding: 10px 0px;
+    }
+    #mentorContainer .card img{
+        height: 80px;
+        width: 80px;
+        border: 1px solid rgb(155 153 153);
+    }
+    #mentorContainer .card p{
+        padding: 14px 12px;
+        font-size: 12px;
+    }
+
+    #contactSection h2{
+        font-size: 20px;
+        padding: 5px 0px;
+    }
+    #contactSection .contactArea{
+        display: flex;
+        margin: 0px 8px;
+        padding: 5px 0px;
+    }
+    #contactSection img{
+        width: 20px;
+        height: 20px;
+    }
+
+    #footer{
+        font-size: 8px;
+        padding: 1px 0px;
+    }
+}
+
+/*  */
+/* Smart phone section */
+/*  */
+
+@media only screen and (min-width:400px) and (max-width: 700px){
+    #navbar{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #navbar .mainLogo{
+        margin: 1px 0px;
+    }
+    #navbar .mainLogo h1{
+        padding-right: 0px;
+        font-size: 20px;
+    }
+    #navbar .mainLogo img{              
+        margin: 2px 6px;
+        height: 25px;
+        width: 25px;
+    }
+    #navbar ul{
+        margin: 5px 0px;
+        flex-wrap: wrap;
+    }
+    #navbar ul li a{
+        font-size: 14px;
+        padding: 1px 14px;
+    }
+
+    #mentorContainer .cardArea{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 0px;
+        padding-bottom: 6px;
+    }
+    #mentorContainer h1{
+        font-size: 26px;
+        padding: 18px 0px;
+    }
+    #mentorContainer .card{
+        border: 1px solid black;
+        padding: 4px 4px;
+        margin: 8px 12px;
+    }
+    #mentorContainer .card h3{
+        font-size: 20px;
+        padding: 10px 0px;
+    }
+    #mentorContainer .card img{
+        height: 100px;
+        width: 100px;
+        border: 1px solid rgb(155 153 153);
+    }
+    #mentorContainer .card p{
+        padding: 18px 12px;
+        font-size: 15px;
+    }
+
+    #contactSection h2{
+        font-size: 26px;
+        padding: 10px 0px;
+    }
+    #contactSection .contactArea{
+        display: flex;
+        margin: 0px 8px;
+        padding: 5px 0px;
+    }
+    #contactSection img{
+        width: 30px;
+        height: 30px;
+    }
+    #footer{
+        font-size: 11px;
+        padding: 1px 0px;
+    }
+}
+
+/*  */
+/* tablet section */
+/*  */
+
+@media only screen and (min-width:700px) and (max-width: 900px){
+
+    #navbar .mainLogo{
+        margin: 1px 0px;
+    }
+    #navbar .mainLogo h1{
+        padding-right: 20px;
+        font-size: 23px;
+    }
+    #navbar .mainLogo img{              
+        margin: 2px 8px;
+        height: 30px;
+        width: 30px;
+    }
+    #navbar ul{
+        margin: 5px 0px;
+        flex-wrap: wrap;
+    }
+    #navbar ul li a{
+        font-size: 16px;
+        padding: 1px 14px;
+    }
+
+    #mentorContainer .cardArea{
+        margin: 0px 6px;
+        padding-bottom: 6px;
+    }
+    #mentorContainer h1{
+        font-size: 38px;
+        padding: 18px 0px;
+    }
+    #mentorContainer .card{
+        border: 2px solid black;
+        padding: 4px 4px;
+        margin: 8px 6px;
+    }
+    #mentorContainer .card h3{
+        font-size: 20px;
+        padding: 10px 0px;
+    }
+    #mentorContainer .card img{
+        height: 130px;
+        width: 130px;
+        border: 2px solid rgb(155 153 153);
+    }
+    #mentorContainer .card p{
+        padding: 20px 12px;
+        font-size: 18px;
+    }
+
+    #contactSection h2{
+        font-size: 32px;
+        padding: 10px 0px;
+    }
+    #contactSection .contactArea{
+        display: flex;
+        margin: 0px 8px;
+        padding: 5px 0px;
+    }
+    #contactSection img{
+        width: 40px;
+        height: 40px;
+    }
+    
+    #footer{
+        font-size: 15px;
+        padding: 1px 0px;
+    }
+}
+/* @media only screen and (min-width: 900px){
+    #mentorContainer .cardArea{
+        margin: 0px 6px;
+        padding-bottom: 6px;
+    }
+} */

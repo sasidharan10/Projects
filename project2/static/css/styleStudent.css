@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Reggae+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+/* font-family: 'Reggae One', cursive; */
+/* font-family: 'Mate SC', serif; */
+/* font-family: 'Josefin Sans', sans-serif; */
+
+#student{
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(199, 197, 197);
+}
+
+#student h1{ 
+    font-family: 'Mate SC', serif;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    font-size: 54px;
+    padding: 34px 0px;
+}
+.table{
+    text-align: center;
+    border-collapse: collapse;
+    border-radius: 10px 10px 0px 0px;
+    width: 90%;
+    background-color: rgb(105, 105, 105);
+    margin: 10px 0px;
+    margin-bottom:40px;
+    overflow: hidden;
+    /* overflow: hidden is important for border-radius */ 
+}
+
+.table thead th{
+    background-color: black;
+    color: white;
+    margin: auto;
+    font-size: 30px;
+    padding: 0px 16px;
+    padding-top: 5px;
+    border-bottom: 1px solid rgb(160, 160, 160);
+}
+
+#table-body td{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    font-size: 25px;
+    padding-top: 10px;
+    line-height: 30px;
+    border-bottom: 1px solid rgb(160, 160, 160);
+}
+
+#table-body tr:nth-of-type(even){
+    background-color: rgb(116, 116, 116);
+}
+#table-body tr:last-of-type{
+    border-bottom: 5px solid rgb(0, 0, 0);
+}
+#table-body a img{
+    height: 25px;
+    width: 25px;
+    margin: 0px 5px;
+}
+#table-body img:hover{
+    filter: invert(1);
+}
+#contactSection{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(119, 119, 119);
+}
+#contactSection h2{
+    font-family: 'Mate SC', serif;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    padding: 15px 0px;
+}
+#contactSection .contactArea{
+    display: flex;
+    margin: 0px 30px;
+    justify-content: space-around;
+    padding:10px 0px;
+}
+#contactSection img{
+    width: 50px;
+    height: 50px;
+    filter: invert(0);
+}
+#contactSection img:hover{
+    filter: invert(1);
+}
+.alert-student{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    background-color: rgb(161, 250, 161);
+    color: green;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 2px solid green;
+    font-size: 20px;
+    margin: 10px;
+    padding: 15px 30px;
+}
+
+/*  */
+/* phone section */
+/*  */
+
+@media only screen and (max-width: 400px){
+    #navbar{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #navbar .mainLogo{
+        margin: 1px 0px;
+    }
+    #navbar .mainLogo h1{
+        padding-right: 0px;
+        font-size: 16px;
+    }
+    #navbar .mainLogo img{              
+       margin: 0px 4px;
+        height: 22px;
+        width: 22px;
+    }
+    #navbar ul{
+        margin: 0px 0px;
+        flex-wrap: wrap;
+    }
+    #navbar ul li a{
+        font-size: 9px;
+        padding: 1px 6px;
+    }
+    #student h1{
+        font-size: 20px;
+        padding: 12px 0px;
+    }
+    #table-body a img{
+        height: 15px;
+        width: 15px;
+        margin: 0px 5px;
+    }
+    
+    /*  */
+    /* table */
+    /*  */
+    
+    .table{
+        border-radius: 7px 7px 0px 0px;
+        width: 95%;
+        margin: 5px 0px;
+    }
+    
+    .table thead th{
+        font-size: 15px;
+        padding: 0px 2px;
+        padding-top: 5px;
+    }
+    
+    #table-body td{    
+        font-size: 10px;
+        padding-top: 2px;
+        line-height: 24px;
+    }
+    #contactSection h2{
+        font-size: 20px;
+        padding: 5px 0px;
+    }
+    #contactSection .contactArea{
+        display: flex;
+        margin: 0px 8px;
+        padding: 5px 0px;
+    }
+    #contactSection img{
+        width: 20px;
+        height: 20px;
+    }
+    .alert-student{
+        border: 1px solid green;
+        font-size: 10px;
+        margin: 5px;
+        padding: 8px 15px;
+    }
+    #footer{
+        font-size: 8px;
+        padding: 1px 0px;
+    }
+}
+
+/*  */
+/* Smart phone section */
+/*  */
+
+@media only screen and (min-width:400px) and (max-width: 700px){
+    #navbar{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #navbar .mainLogo{
+        margin: 1px 0px;
+    }
+    #navbar .mainLogo h1{
+        padding-right: 0px;
+        font-size: 20px;
+    }
+    #navbar .mainLogo img{              
+        margin: 2px 6px;
+        height: 25px;
+        width: 25px;
+    }
+    #navbar ul{
+        margin: 5px 0px;
+        flex-wrap: wrap;
+    }
+    #navbar ul li a{
+        font-size: 14px;
+        padding: 1px 14px;
+    }
+    #student h1{
+        font-size: 26px;
+        padding: 18px 0px;
+    }
+    #table-body a img{
+        height: 18px;
+        width: 18px;
+        margin: 0px 5px;
+    }
+    /*  */
+    /* table */
+    /*  */
+    
+    .table{
+        border-radius: 7px 7px 0px 0px;
+        width: 95%;
+        margin: 5px 0px;
+    }
+    
+    .table thead th{
+        font-size: 20px;
+        padding: 0px 2px;
+        padding-top: 5px;
+    }
+    
+    #table-body td{    
+        font-size: 14px;
+        padding-top: 4px;
+        line-height: 24px;
+    }
+    #contactSection h2{
+        font-size: 26px;
+        padding: 10px 0px;
+    }
+    #contactSection .contactArea{
+        display: flex;
+        margin: 0px 8px;
+        padding: 5px 0px;
+    }
+    #contactSection img{
+        width: 30px;
+        height: 30px;
+    }
+    .alert-student{
+        border: 1px solid green;
+        font-size: 12px;
+        margin: 8px;
+        padding: 8px 15px;
+    }
+    #footer{
+        font-size: 11px;
+        padding: 1px 0px;
+    }
+}
+
+/*  */
+/* tablet section */
+/*  */
+
+@media only screen and (min-width:700px) and (max-width: 900px){
+    #navbar .mainLogo{
+        margin: 1px 0px;
+    }
+    #navbar .mainLogo h1{
+        padding-right: 20px;
+        font-size: 23px;
+    }
+    #navbar .mainLogo img{              
+        margin: 2px 8px;
+        height: 30px;
+        width: 30px;
+    }
+    #navbar ul{
+        margin: 5px 0px;
+        flex-wrap: wrap;
+    }
+    #navbar ul li a{
+        font-size: 16px;
+        padding: 1px 14px;
+    }
+    #student h1{
+        font-size: 38px;
+        padding: 18px 0px;
+    }
+    #table-body a img{
+        height: 22px;
+        width: 22px;
+        margin: 0px 5px;
+    }
+
+    /*  */
+    /* table */
+    /*  */
+    
+    .table{
+        border-radius: 7px 7px 0px 0px;
+        width: 90%;
+        margin: 5px 0px;
+    }
+    
+    .table thead th{
+        font-size: 22px;
+        padding: 0px 2px;
+        padding-top: 8px;
+    }
+    
+    #table-body td{    
+        font-size: 16px;
+        padding-top: 6px;
+        line-height: 26px;
+    }
+    #contactSection h2{
+        font-size: 32px;
+        padding: 10px 0px;
+    }
+    #contactSection .contactArea{
+        display: flex;
+        margin: 0px 8px;
+        padding: 5px 0px;
+    }
+    #contactSection img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .alert-student{
+        border: 1px solid green;
+        font-size: 16px;
+        margin: 8px;
+        padding: 8px 25px;
+    }
+    #footer{
+        font-size: 15px;
+        padding: 1px 0px;
+    }
+}
+
