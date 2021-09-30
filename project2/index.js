@@ -9,7 +9,6 @@ var fullData = model.find({});
 // EXPRESS SPECIFIC STUFFS
 app.use('/static', express.static('static'));
 app.use(express.urlencoded({ extended: true }));
-
 app.engine('html', require('ejs').renderFile);
 
 app.get('/', (req, res) => {
